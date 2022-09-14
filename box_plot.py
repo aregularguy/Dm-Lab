@@ -49,7 +49,12 @@ mid2 = len(l3) //2
 res2 = (l3[mid2] + l3[~mid2]) /2
 print('The Upper Quartile of data is ' , res2)
 
-print('The Inter Quartile Range is ', res2 - res1)
+
+first_quartile = res1
+third_quartile = res2
+inter_quartile =   third_quartile - first_quartile
+
+print('The Inter Quartile Range is ', inter_quartile)
 
 
 
