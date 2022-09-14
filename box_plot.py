@@ -1,18 +1,4 @@
-# import pandas as pd
-
-# import numpy as np
-
-# dataframe = pd.DataFrame(np.random.randn(5,5) , column = ['2016' , '2017' , '2018' , '2019' , ' 2020' ] )
-
-
-# # Print the the values of dataframe
-# print(dataframe.head())
-# # Display the box plot based on the dataframe values
-# dataframe.boxplot(grid='false', color='blue',fontsize=10, rot=30 )
-
-
-
-import random
+# import random
 # dataset = []
 # for i in range(0,25):
 #  n = random.randint(1,30)
@@ -47,5 +33,26 @@ mid  = len (l1) // 2
 res = (l1[mid] + l1[~mid] ) / 2
 
 print("Median of list is : " + str(res))
+l2 = []
+for i in range(6):
+    l2.append(l1[i])
+    
+    
+mid1 = len(l2) // 2
+res1 =  (l2[mid1] + l2[~mid1])  / 2  
+print('Lower  quartile is ', res1)
+
+l3 = [ ]
+for i in range(18):
+  l3.append(l1[i])
+mid2 = len(l3) //2  
+res2 = (l3[mid2] + l3[~mid2]) /2
+print('The Upper Quartile of data is ' , res2)
+
+print('The Inter Quartile Range is ', res2 - res1)
+
+
+
+
 
 # print(dataset)
